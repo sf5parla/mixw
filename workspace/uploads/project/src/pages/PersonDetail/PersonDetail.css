@@ -1,0 +1,499 @@
+/* Person Detail Page Styles */
+.person-detail {
+  min-height: 100vh;
+  background: #000000;
+  padding-top: 70px;
+}
+
+/* Loading and Error States */
+.person-detail-loading,
+.person-detail-error {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.loading-container,
+.error-container {
+  text-align: center;
+  max-width: 400px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #b3b3b3;
+}
+
+.error-container h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.error-container p {
+  color: #b3b3b3;
+  margin-bottom: 2rem;
+}
+
+/* Hero Section */
+.person-hero {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+}
+
+.person-header {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Photo */
+.person-photo-container {
+  position: relative;
+}
+
+.person-photo-large {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.person-photo-large:hover {
+  transform: scale(1.02);
+}
+
+.person-photo-large img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Person Info */
+.person-info {
+  padding-top: 1rem;
+}
+
+.person-title-section {
+  margin-bottom: 2rem;
+}
+
+.person-name {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.person-aka {
+  font-size: 1rem;
+  color: #b3b3b3;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.person-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #b3b3b3;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #8c8c8c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.person-popularity {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.popularity-score {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+}
+
+.popularity-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.popularity-label {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.person-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.external-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.external-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Content Tabs */
+.person-content {
+  padding: 3rem 0;
+}
+
+.content-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+  padding-bottom: 0;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: #ffffff;
+}
+
+.tab-btn.active {
+  color: #ffffff;
+  border-bottom-color: #a855f7;
+}
+
+.tab-content {
+  min-height: 400px;
+}
+
+/* Biography Content */
+.biography-content {
+  max-width: 800px;
+}
+
+.biography-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.biography-paragraphs p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #b3b3b3;
+  margin-bottom: 1.5rem;
+}
+
+.no-biography {
+  text-align: center;
+  padding: 3rem;
+  color: #8c8c8c;
+}
+
+/* Credits Content */
+.credits-content {
+  width: 100%;
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.credit-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.credit-card:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.credit-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.credit-poster {
+  position: relative;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.credit-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.credit-card:hover .credit-poster img {
+  transform: scale(1.1);
+}
+
+.credit-overlay {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+}
+
+.credit-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffd700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.credit-info {
+  padding: 1rem;
+}
+
+.credit-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.credit-character {
+  font-size: 0.8rem;
+  color: #a855f7;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.credit-year {
+  font-size: 0.75rem;
+  color: #8c8c8c;
+  margin-bottom: 0;
+}
+
+.no-credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.no-credits svg {
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #a855f7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .person-header {
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+  }
+  
+  .credits-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .person-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .person-photo-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .person-stats {
+    max-width: 400px;
+    margin: 0 auto 2rem;
+  }
+  
+  .content-tabs {
+    justify-content: center;
+  }
+  
+  .credits-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+  
+  .person-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .person-name {
+    font-size: 2rem;
+  }
+  
+  .person-header {
+    gap: 1.5rem;
+  }
+  
+  .person-stats {
+    padding: 1rem;
+  }
+  
+  .credits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .credit-info {
+    padding: 0.75rem;
+  }
+  
+  .credit-title {
+    font-size: 0.8rem;
+  }
+  
+  .credit-character {
+    font-size: 0.75rem;
+  }
+  
+  .external-link {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .person-photo-large,
+  .credit-card,
+  .external-link {
+    transition: none !important;
+  }
+  
+  .loading-spinner {
+    animation: none !important;
+  }
+}
+
+/* Focus styles */
+.tab-btn:focus-visible,
+.external-link:focus-visible,
+.credit-link:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .person-stats,
+  .popularity-score,
+  .credit-card {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .external-link {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Animation keyframes */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

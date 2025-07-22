@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage Images -->
+  <url>
+    <loc>https://streamflix.com/</loc>
+    <image:image>
+      <image:loc>https://streamflix.com/imgs/big_logo.png</image:loc>
+      <image:caption>StreamFlix - Premium Movie and TV Show Streaming Platform Logo</image:caption>
+      <image:title>StreamFlix Main Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://streamflix.com/imgs/small_logo.png</image:loc>
+      <image:caption>StreamFlix Navigation Logo</image:caption>
+      <image:title>StreamFlix Header Logo</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Movie Pages Template -->
+  <url>
+    <loc>https://streamflix.com/movie/[ID]</loc>
+    <image:image>
+      <image:loc>https://image.tmdb.org/t/p/w500/[POSTER_PATH]</image:loc>
+      <image:caption>[MOVIE_TITLE] ([YEAR]) - Movie Poster</image:caption>
+      <image:title>[MOVIE_TITLE] Official Poster</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/[BACKDROP_PATH]</image:loc>
+      <image:caption>[MOVIE_TITLE] - Movie Scene Background</image:caption>
+      <image:title>[MOVIE_TITLE] Backdrop Image</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Flag Images for Language Selection -->
+  <url>
+    <loc>https://streamflix.com/movie/[ID]</loc>
+    <image:image>
+      <image:loc>https://streamflix.com/imgs/flags/US.png</image:loc>
+      <image:caption>United States Flag - English Language Option</image:caption>
+      <image:title>English Language Selection</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://streamflix.com/imgs/flags/ES.png</image:loc>
+      <image:caption>Spain Flag - Spanish Language Option</image:caption>
+      <image:title>Spanish Language Selection</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://streamflix.com/imgs/flags/FR.png</image:loc>
+      <image:caption>France Flag - French Language Option</image:caption>
+      <image:title>French Language Selection</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://streamflix.com/imgs/flags/DE.png</image:loc>
+      <image:caption>Germany Flag - German Language Option</image:caption>
+      <image:title>German Language Selection</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://streamflix.com/imgs/flags/IT.png</image:loc>
+      <image:caption>Italy Flag - Italian Language Option</image:caption>
+      <image:title>Italian Language Selection</image:title>
+    </image:image>
+  </url>
+  
+</urlset>

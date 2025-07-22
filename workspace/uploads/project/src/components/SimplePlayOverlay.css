@@ -1,0 +1,102 @@
+/* Simple Play Button Overlay Styles */
+.simple-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.simple-play-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.simple-play-btn:hover {
+  background: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.simple-play-btn:active {
+  transform: scale(0.95);
+}
+
+/* Netflix Row Simple Overlay */
+.simple-netflix-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.simple-netflix-play-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.simple-netflix-play-btn:hover {
+  background: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.simple-netflix-play-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .simple-play-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .simple-play-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .simple-netflix-play-btn {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .simple-netflix-play-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Image Sitemap
+Sitemap: https://streamflix.com/sitemap-images.xml
+
+# Main Sitemap
+Sitemap: https://streamflix.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow access to image directories
+Allow: /imgs/
+Allow: /assets/
+
+# Block admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+
+# Block search parameters to avoid duplicate content
+Disallow: /*?*
+Allow: /*?q=*
